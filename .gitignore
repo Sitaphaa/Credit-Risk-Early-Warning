@@ -19,7 +19,7 @@ dist/
 *.key
 
 # Restricted or potentially sensitive datasets / artifacts
-/data
+/*
 /data/raw/
 /data/interim/
 /data/processed/
@@ -32,6 +32,11 @@ dist/
 *.sqlite
 *.db
 *.log
+
+# Allow only the synthetic test fixture
+!/data/fixtures/
+/data/fixtures/*
+!/data/fixtures/loans_synthetic.csv
 
 # Operating system
 .DS_Store
