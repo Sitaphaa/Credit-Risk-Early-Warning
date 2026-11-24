@@ -1,0 +1,38 @@
+# Python and editor files
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.vscode/
+.idea/
+
+# Credentials and environment settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Restricted or potentially sensitive datasets / artifacts
+/data
+/data/raw/
+/data/interim/
+/data/processed/
+/data/external/
+/artifacts/
+/models/
+/mlruns/
+*.parquet
+*.feather
+*.sqlite
+*.db
+*.log
+
+# Operating system
+.DS_Store
+Thumbs.db

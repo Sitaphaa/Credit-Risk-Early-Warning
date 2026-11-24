@@ -1,0 +1,16 @@
+[project]
+name = "Credit Risk Early Warning System"
+
+
+[scoring]
+horizon_months = 6
+severe_delinquency_status = 3
+review_capacity_fraction = 0.05
+
+
+[paths]
+synthetic_fixture = "data/fixtures/loans_synthetic.csv"
+data_dir = "data"
+
+[assumptions]
+notes = "Operational target is reported 90+ delinquency; not a regulatory PD."
